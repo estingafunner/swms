@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<!--http://1000logos.net/wp-content/uploads/2017/07/T-Mobile-Logo.png-->
+	<meta charset="utf-8">
+	<meta name="description" content="Tech CheckList">
+
+	<title>Tech CheckList</title>
+	<link rel="shortcut icon" href="https://png.icons8.com/metro/1600/settings.png" />
+	<link rel="stylesheet" type="text/css" href="file:///S:/Customer%20Care/SWMS%20inc/4-00_yrs/CSS/ts_style.css">
+
+</head>
+
+<body id="bodyCSS">
+
+<header>
+<section class="navBar">                                           
+<h1 class="headers"><img class="logo" src="http://1000logos.net/wp-content/uploads/2017/07/T-Mobile-Logo.png" alt="Mountain View">
+Welcome to SWMS400 </h1>
+</section>
+</header>
+
+<!--Just Leaving a comment for the fun
+
+-->
+
+<table class="selectionTable">
+<tbody>
+<tr> 
+
+</tr> 
+<tr> 
+
+<td class="userTable">
+	<div class="tableHeader">
+	<u><b>User Info</b></u></div>
+
+	<form class="idStuff">
+ 	NT Login:<br>
+	<input type="text" id="NT"><br>
+
+	<input class="radioButton" type="radio" id="team7" value="C7" >C7<br>
+	<input class="radioButton" type="radio" id="team6" value="C6" >C6<br>
+	<input class="radioButton" type="radio" id="team5" value="C5" >C5<br>
+	</form>
+</td>
+
+<td class="auditTable"><div class="tableHeader">
+	<u><b>Audit</b></u></div>
+
+	<form class="idStuff">
+	MSISDN:<br>
+	<input type="text" onchange="checkDone()" id="msisdn">
+	</form>
+
+	<input class="addButton" type="button" value="Open In GC" onclick="linkGC()" >
+
+	<p><input type="checkbox" id="opt1">
+    	<label id="appLabel" onclick="optLbl(1)">Missing/Wrong SOC</label>
+	</p>
+
+	<p><input type="checkbox" id="opt2">
+    	<label id="appLabel" onclick="optLbl(2)">Network Outages</label>
+	</p>
+
+	<p><input type="checkbox" id="opt3">
+    	<label id="appLabel" onclick="optLbl(3)">Data/Fair Usage Throttling</label>
+	</p>
+
+	<p><input type="checkbox" id="opt4">
+    	<label id="appLabel" onclick="optLbl(4)">Existing Ticket Updates</label>
+	</p>
+	
+</td>
+
+<!--
+
+THE HOLDING ROOM
+
+-->
+
+
+<td class="exchTable">
+	
+	<div class="tableHeader">
+	<u><b>Exchange</b></u></div>
+
+	<div class="note">If any of the below have occured, perform a forced restart (soft reset). 
+		If that doesn't fix the problem, file a Warranty Exchange.
+	</div>
+
+	<p><input type="checkbox" class="webBox" id="opt5">
+	<label class="webLabel" onclick="optLbl(5)">An Update Caused the Problem</label>
+
+	</p><p><input type="checkbox" class="webBox" id="opt6">
+	<label class="webLabel" onclick="optLbl(6)">The Device Won’t Turn On</label>
+
+	</p><p><input type="checkbox" class="webBox" id="opt7">
+	<label class="webLabel" onclick="optLbl(7)">The Screen Is Unresponsive</label>
+
+</td>
+
+</tr>
+</tbody>
+</table>
+
+<!--
+<input class="nextButton"  type="button" id="doneButton2" value="Done" onclick="clearRep()">
+-->
+	
+<input class="nextButton"  type="button" style="display:none;" id="doneButton" value="Done" onclick="clearRep()">
+
+
+
+
+<header>
+<section class="navBar">
+<img class="logo" src="http://1000logos.net/wp-content/uploads/2017/07/T-Mobile-Logo.png" alt="Mountain View">
+</section>
+</header>
+
+	<script src="file:///S:\Customer Care\SWMS inc\4-00_yrs\JS\ts_js.js"></script>
+
+
+
+</body>
+</html>
