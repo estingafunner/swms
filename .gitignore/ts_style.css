@@ -6,9 +6,11 @@
 		.loginHeader{
     			margin-top: 0;
 			
-			
-			}
 
+			}
+		.main {
+			margin-top: 30px; /* Add a top margin to avoid content overlay */
+			}
 
 		.idStuff{
     			margin-top: 10%;
@@ -17,7 +19,6 @@
 			}
 		.centerMe{
     			display: block;
-			
 			margin-left: auto;
 			margin-right: auto;
 			}
@@ -25,28 +26,49 @@
 			
 			background-color: black;
     			display: block;
-			align-text: right
-			margin-left: ;
-			margin-right: ;
-			margin-top: auto;
-			margin-bottom: auto;
-			width: 20%;
-			
+
+			height: 60px;
 			image-rendering: auto;
 			}
 			
 		.navBar{
+			background-color: black;
+    			display: block;
+			position: fixed; /* Set the navbar to fixed position */
+			top: 0; /* Position the navbar at the top of the page */
+
+			}
+		.navBarB{
 			width: 100%;
 			background-color: black;
     			display: block;
+
+			}
+		.sidenav {
+  			height: 100%;
+  			width: 40px;
+  			position: fixed;
+  			z-index: 1;
+  			top: 0;
+  			left: 0;
+ 			 background-color: #111;
+  			overflow-x: hidden;
+  			padding-top: 0px;
+			}
+
+		.navBar:hover {
+			background: #ddd;
+			color: black;
 			}
 
 		#bodyCSS{
+			margin-top: 61px;
+			margin-left: 40px;
 			background-color: #ECECEC;
 			color: black;
 			font-family: Georgia, serif, monospace;
-			padding: 1% 1% 1% 1%; 
-			border: solid;
+			
+			border: none;
 			overflow: auto;
 			}
 
@@ -160,6 +182,22 @@
 			width: 80%;
 			margin: 5% 5% 5% 5%;
 			}
+
+		.navTable{
+			vertical-align: top;
+			border: none ;
+			background-color: #EC0391;
+			table-layout: auto;
+
+		
+			align-content: center;
+
+			width: 100%;
+/*
+			padding: 3% 4% 3% 4%;
+			margin: 5% 5% 5% 5%;
+*/
+			}
 		.webTable{
 			vertical-align: top;
 			border:dashed black ;
@@ -188,8 +226,12 @@
 			margin: 5%;
 			overflow: auto;			
 			}
-		.UNUSED{
-
+		.blackBack{
+			margin-top: 0;
+			width: 100%;
+			background-color: black;
+			
+			position: fixed;
 
 
 
